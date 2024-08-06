@@ -8,7 +8,7 @@
     function onYouTubeIframeAPIReady() {
       var urlParams = new URLSearchParams(window.location.search);
       var videoId = urlParams.get('videoId'); // Get the video ID from the URL
-
+	console.log("window.location.search: " + window.location.search); // For debugging
       console.log("videoId: " + videoId); // For debugging
 
       player = new YT.Player('player', {
